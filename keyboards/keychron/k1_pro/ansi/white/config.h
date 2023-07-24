@@ -21,6 +21,8 @@
 #    define DRIVER_COUNT 1
 #    define DRIVER_ADDR_1 0b1110100
 
+#    define LED_MATRIX_MAXIMUM_BRIGHTNESS 256
+#    define LED_MATRIX_VAL_STEP 64
 /* LED Matrix Configuration */
 #    define LED_MATRIX_LED_COUNT 87
 
