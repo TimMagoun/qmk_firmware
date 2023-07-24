@@ -26,12 +26,12 @@
 
 //  Uint: Second
 #ifndef DISCONNECTED_BACKLIGHT_OFF_DELAY_TIME
-#    define DISCONNECTED_BACKLIGHT_OFF_DELAY_TIME   40
+#    define DISCONNECTED_BACKLIGHT_OFF_DELAY_TIME   20
 #endif
 
 //  Uint: Second, the timer restarts on key activities.
 #ifndef CONNECTED_BACKLIGHT_OFF_DELAY_TIME
-#    define CONNECTED_BACKLIGHT_OFF_DELAY_TIME      600
+#    define CONNECTED_BACKLIGHT_OFF_DELAY_TIME      300
 #endif
 
 #endif
