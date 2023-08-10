@@ -38,6 +38,7 @@ enum {
     KC_TASK,
     KC_FILE,
     KC_SNAP,
+    KC_LOCK,
     KC_CTANA,
     KC_SIRI,
 #ifdef KC_BLUETOOTH_ENABLE

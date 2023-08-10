@@ -41,10 +41,11 @@ static uint32_t power_on_indicator_timer_buffer = 0;
 static uint32_t siri_timer_buffer               = 0;
 static uint8_t  mac_keycode[4]                  = {KC_LOPT, KC_ROPT, KC_LCMD, KC_RCMD};
 
-key_combination_t key_comb_list[4] = {
+key_combination_t key_comb_list[5] = {
     {2, {KC_LWIN, KC_TAB}},        // Task (win)
     {2, {KC_LWIN, KC_E}},          // Files (win)
     {3, {KC_LSFT, KC_LGUI, KC_4}}, // Snapshot (mac)
+    {3, {KC_LCMD, KC_LCTL, KC_Q}}, // Lock (mac)
     {2, {KC_LWIN, KC_C}}           // Cortana (win)
 };
 
@@ -93,6 +94,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
         case KC_TASK:
         case KC_FILE:
         case KC_SNAP:
+        case KC_LOCK:
         case KC_CTANA:
             if (record->event.pressed) {
                 for (uint8_t i = 0; i < key_comb_list[keycode - KC_TASK].len; i++)
